@@ -1,0 +1,95 @@
+<html>
+   <head>
+       <title>
+           Ezra's Icons
+       </title>
+
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js">
+       </script>
+
+
+       <style>
+           .row{
+               width: 720;
+               margin: 50 auto 50 auto
+
+           }
+
+
+           .image_container{
+               display: table-cell;
+               vertical-align: middle;
+               padding: 30;
+           }
+
+           .image_container:hover{
+            transform: scale(1.3);
+           }
+
+
+           
+       </style>
+
+
+   </head>
+
+
+   <body style="background-color: rgb(132, 92, 44);">
+
+       <div class="row">
+           <div class="image_container"><img id="Anvil" src="img/Anvil@2x.png" width="100%" height="100%" onmouseover = "this.src = 'img/Anvil_1shadow.png';" onmouseout = "this.src = 'img/Anvil@2x.png';"> </div>
+           <div class="image_container"><img id="Boat" src="img/Boat@2x.png" width="100%" height="100%" onmouseover = "this.src = 'img/Boat_1shadow.png';" onmouseout = "this.src = 'img/Boat@2x.png';"></div>
+           <div class="image_container"><img id="Bread" src="img/Bread@2x.png" width="100%" height="100%" onmouseover = "this.src = 'img/Bread_1shadow.png';" onmouseout = "this.src = 'img/Bread@2x.png';"></div>
+       </div>
+
+
+       <div class="row">
+           <div class="image_container"><img id="Construction" src="img/Construction@2x.png" width="100%" height="100%" onmouseover = "this.src = 'img/Construction_1shadow.png';" onmouseout = "this.src = 'img/Construction@2x.png';"> </div>
+           <div class="image_container"><img id="Cup" src="img/Cup@2x.png" width="100%" height="100%" onmouseover = "this.src = 'img/Cup_1shadow.png';" onmouseout = "this.src = 'img/Cup@2x.png';"></div>
+           <div class="image_container"><img id="Engraving" src="img/Engraving@2x.png" width="100%" height="100%" onmouseover = "this.src = 'img/Engraving_1shadow.png';" onmouseout = "this.src = 'img/Engraving@2x.png';"></div>
+       </div>
+
+
+       <div class="row">
+           <div class="image_container"><img id="Farm" src="img/Farm@2x.png" width="100%" height="2100%0" onmouseover = "this.src = 'img/Farm_1shadow.png';" onmouseout = "this.src = 'img/Farm@2x.png';"> </div>
+           <div class="image_container"><img id="Temple" src="img/Temple@2x.png" width="100%" height="100%" onmouseover = "this.src = 'img/Temple_1shadow.png';" onmouseout = "this.src = 'img/Temple@2x.png';"></div>
+           <div class="image_container"><img id="Vase" src="img/Vase@2x.png" width="100%" height="100%" onmouseover = "this.src = 'img/Vase_1shadow.png';" onmouseout = "this.src = 'img/Vase@2x.png';"></div>
+       </div>
+
+
+     
+       <script>
+           var Armorys = new buzz.sound("sound/Armory.mp3");
+           var boats = new buzz.sound("./sound/boat.mp3");
+           var breads = new buzz.sound("./sound/bread.mp3");
+
+           var Constructions = new buzz.sound("./sound/construction.mp3");
+           var cups = new buzz.sound("sound/cup.mp3");
+           var Engravings = new buzz.sound("sound/Engraving.mp3");
+
+           var Farms = new buzz.sound("sound/farm.mp3");
+           var Potterys = new buzz.sound("sound/Pottery.mp3");
+           var Temples = new buzz.sound("sound/temple.mp3");
+
+
+           window.onload = function() {
+               document.getElementById('Anvil').addEventListener('mouseover', function() {Armorys.play();});
+               document.getElementById('Boat').addEventListener('mouseover', function() {boats.play();});
+               document.getElementById('Bread').addEventListener('mouseover', function() {breads.play();});
+
+               document.getElementById('Construction').addEventListener('mouseover', function() {Constructions.play();});
+               document.getElementById('Cup').addEventListener('mouseover', function() {cups.play();});
+               document.getElementById('Engraving').addEventListener('mouseover', function() {Engravings.play();});
+
+               document.getElementById('Farm').addEventListener('mouseover', function() {Farms.play();});
+               document.getElementById('Pottery').addEventListener('mouseover', function() {Potterys.play();});
+               document.getElementById('Temple').addEventListener('mouseover', function() {Temples.play();});
+           }
+       </script>
+
+
+   </body>
+
+
+</html>
